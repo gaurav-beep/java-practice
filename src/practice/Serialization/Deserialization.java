@@ -1,4 +1,4 @@
-package practice;
+package practice.Serialization;
 
 import java.io.FileInputStream;
 import java.io.ObjectInputStream;
