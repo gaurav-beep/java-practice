@@ -18,7 +18,7 @@ public static void main(String[] args) {
 	InterfaceImpl obj = new InterfaceImpl();
 	obj.abstractMethod();
 	obj.defaultMethod();
-	obj.staticMethod();
+	InterfaceImpl.staticMethod();
 	System.out.println("number : "+InterfaceImpl.number);
 	System.out.println("name : "+AbstractInterface.name);
 }

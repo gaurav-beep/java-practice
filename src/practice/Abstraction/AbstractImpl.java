@@ -14,6 +14,6 @@ public static void main(String[] args) {
 	AbstractImpl obj = new AbstractImpl(22,"gaurav");
 	System.out.println(AbstractClass.age+":"+obj.name);
 	obj.abstractMethod();
-	obj.staticMethod();
+	AbstractImpl.staticMethod();
 }
 }
