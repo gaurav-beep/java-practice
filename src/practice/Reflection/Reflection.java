@@ -13,10 +13,10 @@ public class Reflection {
 		Object person = classObj.getConstructor(String.class,String.class).newInstance("Gaurav","22");
 		age.setAccessible(true);
 		city.set(null, "Mumbai");
-		System.out.println("intail  :  { name ="+name.get(person)+",age="+age.get(person)+",city="+city.get(null)+"}");
+		System.out.println("intail  :  {name="+name.get(person)+",age="+age.get(person)+",city="+city.get(null)+"}");
 		name.set(person,"Omkar");
 		age.set(person, "26");
-		System.out.println("after changing  :  { name ="+name.get(person)+",age="+age.get(person)+"}");
+		System.out.println("after changing  :  {name="+name.get(person)+",age="+age.get(person)+"}");
 		/*----------------------------Methods----------------------------------------*/
 		Method defaultMethod = classObj.getDeclaredMethod("defaultMethod");
 		Method staticMethod = classObj.getDeclaredMethod("staticMethod");
