@@ -2,7 +2,7 @@ package practice.Abstraction;
 
 public class AbstractImplUsingAnonymous {
 public static void main(String[] args) {
-	AbstractClass obj = new AbstractClass(22,"Gaurav") {
+	AbstractClass obj = new AbstractClass() {
 
 		@Override
 		void abstractMethod() {
@@ -10,8 +10,8 @@ public static void main(String[] args) {
 		}
 		
 	};
-	obj.abstractMethod();
-	AbstractClass.staticMethod();
-	System.out.println(AbstractClass.age+":"+obj.name);
+//	obj.abstractMethod();
+//	AbstractClass.staticMethod();
+//	System.out.println(AbstractClass.age+":"+obj.name);
 }
 }

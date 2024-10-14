@@ -7,7 +7,8 @@ void getName() {
 	System.out.println(name+":"+age);
 }
 static void getAge() {
-	System.out.println(age);
+	StaticScope object = new StaticScope();
+	System.out.println(object.name);
 }
 public static void main(String[] args) {
 	// static method and variable  = everywhere

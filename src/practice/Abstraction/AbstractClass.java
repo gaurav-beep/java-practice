@@ -3,9 +3,10 @@ package practice.Abstraction;
 public abstract  class AbstractClass {
 	static int age;
 	String name;
-	AbstractClass(int age,String name){
-		this.age=age;
-		this.name=name;
+	AbstractClass(){
+//		this.age=age;
+//		this.name=name;
+		System.out.println("constructor inside abstract class");
 	}
 abstract void abstractMethod();
 static void staticMethod() {
